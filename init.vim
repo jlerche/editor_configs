@@ -44,6 +44,10 @@ if executable('go')
 	Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go'}
 endif
 
+if executable('python')
+	Plug 'zchee/deoplete-jedi', {'for': 'python'}
+endif
+
 call plug#end()
 
 " enable ncm2 for all buffers
