@@ -1,6 +1,8 @@
 nmap <leader>ne :NERDTree<cr>
 
-let g:python3_host_prog = $HOME .'/.pyenv/versions/3.7.0/envs/neovim3/bin/python'
+let g:python_host_prog = $NEOVIM_PYTHON2_PATH .'/bin/python'
+let g:python3_host_prog = $NEOVIM_PYTHON3_PATH .'/bin/python'
+
 "let g:LanguageClient_serverCommands = {}
 
 " Specify a directory for plugins
